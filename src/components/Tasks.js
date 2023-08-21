@@ -32,7 +32,7 @@ const Tasks = (props) => {
 
 	return (
 		<div
-			className="mt-5 py-4 bg-white w-1/2 text-center mx-auto rounded-md"
+			className="mt-5 py-4 bg-white sm:w-11/12 md:w-11/12 lg:w-1/2 text-center mx-auto rounded-md"
 			style={{ backgroundColor: "#333333" }}>
 			<ol>{addedTasks.length === 0 ? <li>No Tasks Found</li> : addedTasks}</ol>
 		</div>

@@ -44,31 +44,29 @@ const Card = (props) => {
 		props.setContent("");
 	};
 	return (
-		<div>
-			<div
-				style={{ backgroundColor: "#333333" }}
-				className="bg-white shadow-md p-6 rounded-lg w-1/2 mx-auto mt-5">
-				<h2 className="text-xl text-white font-semibold mb-4">Daily Note</h2>
-				<input
-					onChange={getText}
-					onKeyDown={handleKeyDown}
-					className="border border-grey-500 w-full p-2.5 bg-slate-500 text-white text-bold focus:outline-dark"
-					type="text"
-					value={props.content}
-				/>
-				<button
-					style={{ display: props.editButton ? "" : "none" }}
-					onClick={props.submitEditedTask}
-					className="mt-4 bg-blue-600 py-2 px-3 rounded-md hover:bg-purple-500 text-white mr-2">
-					Update
-				</button>
-				<button
-					style={{ display: !props.editButton ? "" : "none" }}
-					onClick={submit}
-					className="mt-4 bg-blue-600 py-2 px-3 rounded-md hover:bg-blue-500 text-white">
-					Add Goal
-				</button>
-			</div>
+		<div
+			style={{ backgroundColor: "#333333" }}
+			className="bg-white shadow-md p-6 rounded-lg sm:w-11/12 md:w-11/12 lg:w-1/2 mx-auto mt-10">
+			<h2 className="text-xl text-white font-semibold mb-4">Daily Note</h2>
+			<input
+				onChange={getText}
+				onKeyDown={handleKeyDown}
+				className="border border-grey-500 w-full p-2.5 bg-slate-500 text-white text-bold focus:outline-dark"
+				type="text"
+				value={props.content}
+			/>
+			<button
+				style={{ display: props.editButton ? "" : "none" }}
+				onClick={props.submitEditedTask}
+				className="mt-4 bg-blue-600 py-2 px-3 rounded-md hover:bg-purple-500 text-white mr-2">
+				Update
+			</button>
+			<button
+				style={{ display: !props.editButton ? "" : "none" }}
+				onClick={submit}
+				className="mt-4 bg-blue-600 py-2 px-3 rounded-md hover:bg-blue-500 text-white">
+				Add Goal
+			</button>
 		</div>
 	);
 };

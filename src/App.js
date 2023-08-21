@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Card from "./components/Card";
 import Tasks from "./components/Tasks";
 
@@ -40,7 +39,7 @@ function App() {
 	};
 
 	return (
-		<div className="App text-center">
+		<div className="text-center">
 			<Card
 				content={content}
 				setContent={setContent}
